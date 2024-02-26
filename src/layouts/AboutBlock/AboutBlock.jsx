@@ -28,7 +28,7 @@ const AboutBlock = () => {
             <p>mongodb</p>
           </div>
           <a
-            href="https://drive.google.com/file/d/1SW6CwW7YwTvAnewopbejeJYuNsoh_Vam/view?usp=sharing"
+            href="https://drive.google.com/file/d/1hJJjC62j1IdnuvYrexje1_TZ_rr9bzSF/view?usp=sharing"
             target="_blank"
           >
             <Button text="Downlaod CV " />
