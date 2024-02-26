@@ -1,7 +1,7 @@
 .wrapper {
   font-family: var(--new-font);
   background-color: #eddada;
-  padding: clamp(2.5rem, -0.183rem + 13.41vw, 9.375rem) 0;
+  padding: clamp(0rem, -12.436rem + 30.61vw, 9.375rem) 0;
   display: flex;
   justify-content: center;
   align-items: center;

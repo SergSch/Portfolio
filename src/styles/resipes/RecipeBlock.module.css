@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   min-height: 400px;
@@ -41,13 +41,13 @@ h2 {
   font-size: 20px;
 }
 .instructions {
-  margin-top: 30px;
+  margin: 30px 0;
 }
 .btnBlock {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+
   margin-top: auto;
 }
 .btn {

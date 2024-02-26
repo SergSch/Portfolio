@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   gap: clamp(1.5rem, 1.11rem + 1.95vw, 2.5rem);
+  position: relative;
 }
 
 .text {
@@ -14,4 +15,49 @@
 
 .active {
   color: var(--green);
+}
+
+.menu {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    position: fixed;
+    top: 0;
+    right: -220px;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    width: 220px;
+    height: 100%;
+    background-color: var(--dark);
+    transition: all 0.3s linear;
+    z-index: 5;
+  }
+  .close {
+    display: block;
+    position: absolute;
+    filter: invert(1);
+    right: 20px;
+    top: 35px;
+  }
+  .link {
+    color: #917b7b;
+  }
+  .active {
+    color: var(--green);
+  }
+  .wrapper.activ {
+    right: 0;
+  }
+  .menu {
+    display: block;
+  }
 }
