@@ -10,7 +10,7 @@ textarea {
   padding: 15px 20px;
 }
 
-button {
+.btn {
   background: var(--green);
   border-radius: 25px;
   font-weight: 700;

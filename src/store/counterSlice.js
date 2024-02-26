@@ -8,9 +8,15 @@ const counterSlice = createSlice({
   reducers: {
     increase: (state) => {
       state.counter += 1;
+      if (state.counter > 30) {
+        state.counter = 1;
+      }
     },
     decrease: (state) => {
       state.counter -= 1;
+      if (state.counter === 0) {
+        state.counter = 30;
+      }
     },
   },
 });

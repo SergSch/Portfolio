@@ -1,0 +1,63 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  min-height: 400px;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  padding: clamp(1.875rem, 0.899rem + 4.88vw, 4.375rem) 20px;
+  background-color: antiquewhite;
+}
+h2 {
+  font-size: clamp(2rem, 1.317rem + 3.41vw, 3.75rem);
+  text-align: center;
+}
+
+.img {
+  width: 220px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #d66868;
+}
+
+.descriptionBlock {
+  overflow: auto;
+  padding: 20px;
+  background-color: #a9ecba;
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.instructions {
+  margin-top: 30px;
+}
+.btnBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-top: auto;
+}
+.btn {
+  max-height: fit-content;
+  padding: 10px 20px;
+  background-color: #4e4040;
+  color: var(--white);
+  border-radius: 6px;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}

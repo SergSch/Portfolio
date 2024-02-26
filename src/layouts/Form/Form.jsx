@@ -73,7 +73,7 @@ const Form = () => {
       <p style={{ color: 'red' }}>{errors.email?.message}</p>
 
       <textarea name="" id="" cols="30" rows="7"></textarea>
-      <button>Send Message</button>
+      <button className={classes.btn}>Send Message</button>
     </form>
   );
 };

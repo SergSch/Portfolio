@@ -1,5 +1,8 @@
 .wrapper {
   font-family: var(--new-font);
-  font-size: 32px;
-  font-weight: 700;
+  background-color: #eddada;
+  padding: clamp(2.5rem, -0.183rem + 13.41vw, 9.375rem) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
