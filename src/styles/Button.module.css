@@ -1,0 +1,16 @@
+.btn {
+  padding: 10px 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--white);
+  background: var(--green);
+  border-radius: 25px;
+  max-width: fit-content;
+  cursor: pointer;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}

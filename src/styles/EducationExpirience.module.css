@@ -1,0 +1,32 @@
+.wrapper {
+  position: relative;
+  padding: clamp(2.5rem, 1.037rem + 7.32vw, 6.25rem) 0
+    clamp(2.5rem, 2.012rem + 2.44vw, 3.75rem);
+}
+.wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1;
+  z-index: -1;
+}
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+}
+
+.expirienceBlock,
+.educationBlock {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

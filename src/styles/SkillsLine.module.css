@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.titleBlock {
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  height: 5px;
+  background: var(--black);
+  border-radius: 10px;
+}

@@ -1,0 +1,21 @@
+.wrapper {
+  background-image: url('../assets/images/footerBG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 30px 0 clamp(2.5rem, -0.427rem + 14.63vw, 10rem);
+  text-align: center;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -1,0 +1,20 @@
+.header {
+  background: var(--lightDark);
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.btn {
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--green);
+  padding: 3px 10px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 200%;
+  border-radius: 5px;
+  cursor: pointer;
+}

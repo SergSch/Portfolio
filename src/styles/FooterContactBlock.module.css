@@ -1,0 +1,13 @@
+.wrapper {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: var(--white);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.imgBlock {
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  padding: clamp(1.5rem, 1.11rem + 1.95vw, 2.5rem);
+}

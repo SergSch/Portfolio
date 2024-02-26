@@ -1,0 +1,27 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  padding: clamp(2.5rem, 1.037rem + 7.32vw, 6.25rem) 0
+    clamp(1.875rem, 1.143rem + 3.66vw, 3.75rem);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills p {
+  border: 1px solid var(--green);
+  border-radius: 3px;
+  padding: 5px 12px;
+}

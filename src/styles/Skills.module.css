@@ -1,0 +1,33 @@
+.wrapper {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 70px;
+  padding: clamp(2.5rem, 1.037rem + 7.32vw, 6.25rem) 0
+    clamp(2.5rem, 2.012rem + 2.44vw, 3.75rem);
+}
+
+.technical,
+.professional {
+  text-align: center;
+}
+.skillsLines {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skillsCircles {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+h6 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  color: var(--black);
+}

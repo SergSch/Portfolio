@@ -1,0 +1,22 @@
+.wrapper {
+  padding: 20px 30px;
+  background: var(--white);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--black);
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--green);
+}
