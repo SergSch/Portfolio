@@ -13,11 +13,10 @@ const AboutBlock = () => {
         <div className={classes.about}>
           <TitleH2 text="About Me" />
           <p>
-              Hello, I'm Serg, a budding web developer based in
-            Karlsruhe. While I may not have a vast professional background, my
-            passion for web development fuels my journey to create engaging and
-            dynamic online experiences. Also I
-            am good at
+            Hello, I'm Serg, a budding web developer based in Karlsruhe. While I
+            may not have a vast professional background, my passion for web
+            development fuels my journey to create engaging and dynamic online
+            experiences. Also I am good at
           </p>
           <div className={classes.skills}>
             <p>html</p>
@@ -28,7 +27,12 @@ const AboutBlock = () => {
             <p>sql</p>
             <p>mongodb</p>
           </div>
-          <Button text="Downlaod CV " />
+          <a
+            href="https://drive.google.com/file/d/1SW6CwW7YwTvAnewopbejeJYuNsoh_Vam/view?usp=sharing"
+            target="_blank"
+          >
+            <Button text="Downlaod CV " />
+          </a>
         </div>
       </div>
     </div>

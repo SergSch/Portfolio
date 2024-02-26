@@ -7,7 +7,10 @@ export const apiSlice = createApi({
     getAllRecipes: builder.query({
       query: () => 'recipes',
     }),
+    getSingleRecipe: builder.query({
+      query: (id) => `https://dummyjson.com/recipes/${id}`,
+    }),
   }),
 });
 
-export const { useGetAllRecipesQuery } = apiSlice;
+export const { useGetAllRecipesQuery, useGetSingleRecipeQuery } = apiSlice;

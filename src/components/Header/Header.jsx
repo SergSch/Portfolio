@@ -6,7 +6,15 @@ const Header = () => {
     <div className={classes.header}>
       <div className="container">
         <div className={classes.wrapper}>
-          <div className={classes.btn}>Resume</div>
+          <div className={classes.btn}>
+            <a
+              href="https://drive.google.com/file/d/1SW6CwW7YwTvAnewopbejeJYuNsoh_Vam/view?usp=sharing"
+              target="_blank"
+              style={{ color: 'var(--white)' }}
+            >
+              Resume
+            </a>
+          </div>
           <Navigation />
         </div>
       </div>

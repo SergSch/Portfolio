@@ -9,6 +9,7 @@ import bike from '../../assets/images/hobbys/bike.jpg';
 import volley from '../../assets/images/hobbys/volley.jpg';
 import ski from '../../assets/images/hobbys/ski.jpg';
 import football from '../../assets/images/hobbys/football.jpg';
+import chess from '../../assets/images/chess.webp';
 
 const Hobbys = () => {
   const hobbys = [
@@ -31,6 +32,11 @@ const Hobbys = () => {
       id: 3,
       title: 'Football',
       img: football,
+    },
+    {
+      id: 4,
+      title: 'Chess',
+      img: chess,
     },
   ];
 

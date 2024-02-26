@@ -11,6 +11,7 @@ const Form = () => {
 
   const handleForm = (data) => {
     console.log(data);
+    reset();
   };
 
   return (
