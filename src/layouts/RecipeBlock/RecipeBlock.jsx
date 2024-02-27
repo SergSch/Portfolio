@@ -15,6 +15,7 @@ const RecipeBlock = () => {
 
   return (
     <div className={classes.wrapper}>
+      {isLoading && <h2>Loading...</h2>}
       <div className={classes.titleBlock}>
         <h2>{data?.name}</h2>
         <img src={data?.image} alt={data?.name} className={classes.img} />

@@ -31,7 +31,7 @@ const Navigation = () => {
               } ${classes.link}`
             }
           >
-            About
+            Quiz
           </NavLink>
         </li>
         <li className={classes.text}>

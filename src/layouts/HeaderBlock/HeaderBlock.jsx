@@ -2,9 +2,9 @@ import classes from '../../styles/HeaderBlock.module.css';
 import email from '../../assets/images/icons/email.svg';
 import phone from '../../assets/images/icons/phone.svg';
 import location from '../../assets/images/icons/location.svg';
-import facebook from '../../assets/images/icons/facebook.svg';
 import github from '../../assets/images/icons/github.svg';
 import ball from '../../assets/images/icons/ball.svg';
+import { FaTelegramPlane } from 'react-icons/fa';
 import photo from '../../assets/images/photo.jpg';
 import { FaLinkedin } from 'react-icons/fa6';
 
@@ -24,7 +24,7 @@ const HeaderBlock = () => {
               </div>
               <div>
                 <img src={phone} alt="phone" />
-                <a href="tel:+493456789">+49 986 987 7867</a>
+                <a href="tel:+4915906673777">+49 159 066 73 777</a>
               </div>
               <div>
                 <img src={location} alt="location" />
@@ -38,8 +38,8 @@ const HeaderBlock = () => {
               </div>
             </div>
             <div className={classes.social}>
-              <a href="">
-                <img src={facebook} alt="facebook" />
+              <a href="https://t.me/Serg_17fe" target="_blank">
+                <FaTelegramPlane />
               </a>
               <a
                 href="https://www.linkedin.com/in/serg-schyschow-654209287"
