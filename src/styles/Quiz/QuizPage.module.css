@@ -32,6 +32,22 @@
 .inp {
   width: 20px;
   cursor: pointer;
+  position: relative;
+}
+
+.inp::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 4.7px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.inp:hover::before {
+  background-color: #ff0000;
 }
 
 .btn {

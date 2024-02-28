@@ -36,14 +36,14 @@ const Navigation = () => {
         </li>
         <li className={classes.text}>
           <NavLink
-            to={'/skills'}
+            to={'/weather'}
             className={({ isActive, isPending }) =>
               `${isPending ? 'pending ' : ''} ${
                 isActive ? classes.active : ''
               } ${classes.link}`
             }
           >
-            Skills
+            Weather
           </NavLink>
         </li>
         <li className={classes.text}>

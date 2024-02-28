@@ -76,7 +76,9 @@ const QuizPage = () => {
         {result && (
           <>
             {' '}
-            <h3>Your result is: {points}</h3>
+            <h3>
+              Your result is: {points}/{data.length}
+            </h3>
             <button className={classes.btn} onClick={handleBtnTry}>
               Try again
             </button>{' '}
