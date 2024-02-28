@@ -24,7 +24,7 @@ const Navigation = () => {
         </li>
         <li className={classes.text}>
           <NavLink
-            to={'/about'}
+            to={'/quiz'}
             className={({ isActive, isPending }) =>
               `${isPending ? 'pending ' : ''} ${
                 isActive ? classes.active : ''

@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dae7cd;
+  padding: 100px 0;
+}
+
+.quizBlock {
+  width: clamp(18.125rem, 10.564rem + 37.8vw, 37.5rem);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  border-radius: 10px;
+  background-color: #88f3d6;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.optionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+.label {
+  display: flex;
+  gap: 20px;
+}
+.inp {
+  width: 20px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 7px 20px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+.btn:hover {
+  opacity: 0.8;
+}

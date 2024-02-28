@@ -1,9 +1,11 @@
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+  grid-template-columns: repeat(2, 1fr);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   min-height: 400px;
+  width: 700px;
 }
 
 .titleBlock {
@@ -60,4 +62,10 @@ h2 {
 .btn:active {
   position: relative;
   top: 1px;
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
 }
