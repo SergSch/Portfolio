@@ -1,13 +1,16 @@
+import { useSelector } from 'react-redux';
 import classes from '../../styles/SkillsLine.module.css';
 
 const SkillsLine = ({ text, prcnt }) => {
+  const { theme } = useSelector((state) => state.theme);
+
   return (
     <div className={classes.wrapper}>
       <div className={classes.titleBlock}>
-        <h6>{text}</h6>
-        <h6>{prcnt}%</h6>
+        <h6 className={theme === 'dark' ? classes.dark : ''}>{text}</h6>
+        <h6 className={theme === 'dark' ? classes.dark : ''}>{prcnt}%</h6>
       </div>
-      <div className={classes.line}>
+      <div className={`${theme === 'dark' ? classes.darkLine : classes.line}`}>
         <div
           style={{
             background: `var(--green)`,

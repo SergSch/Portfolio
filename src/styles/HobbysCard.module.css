@@ -17,3 +17,11 @@
   font-weight: 600;
   font-size: 24px;
 }
+
+/* Dark mode */
+.wrapperDark {
+  background-color: var(--moreDark);
+}
+.dark {
+  color: var(--lightDark);
+}

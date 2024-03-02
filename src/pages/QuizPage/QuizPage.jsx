@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import classes from '../../styles/Quiz/QuizPage.module.css';
 import { questions } from '../../utils/data.js';
+import { useSelector } from 'react-redux';
 
 const QuizPage = () => {
   const [data, setData] = useState(questions);
@@ -43,12 +44,22 @@ const QuizPage = () => {
     }
   };
 
+  const { theme } = useSelector((state) => state.theme);
+
   return (
-    <div className={classes.wrapper}>
-      <div className={classes.quizBlock}>
+    <div
+      className={`${classes.wrapper} ${
+        theme === 'dark' ? classes.wrapperDark : ''
+      }`}
+    >
+      <div
+        className={`${classes.quizBlock} ${
+          theme === 'dark' ? classes.quizBlockDark : ''
+        }`}
+      >
         {showQuiz && (
           <div className={classes.quiz}>
-            <h3>
+            <h3 className={theme === 'dark' ? classes.dark : ''}>
               Question № {counter + 1} {data[counter].question}
             </h3>
             <div className={classes.optionBlock}>
@@ -62,24 +73,39 @@ const QuizPage = () => {
                     checked={selectedOption === i}
                     onChange={() => handleRadioChange(question)}
                   />
-                  <h4>{question}</h4>
+                  <h4 className={theme === 'dark' ? classes.dark : ''}>
+                    {question}
+                  </h4>
                 </label>
               ))}
             </div>
           </div>
         )}
         {playBtn && (
-          <button className={classes.btn} onClick={handleBtnPlay}>
+          <button
+            className={`${classes.btn} ${
+              theme === 'dark' ? classes.btnDark : ''
+            }`}
+            onClick={handleBtnPlay}
+          >
             Play
           </button>
         )}
         {result && (
           <>
             {' '}
-            <h3 style={{ marginBottom: '40px' }}>
+            <h3
+              style={{ marginBottom: '40px' }}
+              className={theme === 'dark' ? classes.dark : ''}
+            >
               Your result is: {points}/{data.length}
             </h3>
-            <button className={classes.btn} onClick={handleBtnTry}>
+            <button
+              className={`${classes.btn} ${
+                theme === 'dark' ? classes.btnDark : ''
+              }`}
+              onClick={handleBtnTry}
+            >
               Try again
             </button>{' '}
           </>

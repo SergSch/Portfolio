@@ -1,14 +1,24 @@
+import { useSelector } from 'react-redux';
 import TitleH2 from '../../UI/TitleH2/TitleH2';
 import EducationExperienceCard from '../../components/EducationExperienceCard/EducationExperienceCard';
 import classes from '../../styles/EducationExpirience.module.css';
 
 const EducationExpirience = () => {
+  const { theme } = useSelector((state) => state.theme);
   return (
-    <div className={classes.wrapper}>
+    <div
+      className={`${classes.wrapper} ${
+        theme === 'dark' ? classes.wrapperDark : ''
+      }`}
+    >
       <div className="container">
         <div className={classes.wrap}>
           <div className={classes.education}>
-            <TitleH2 text="Education" />
+            <TitleH2
+              text="Education"
+              text="Technical Skills"
+              color={`${theme === 'dark' ? 'color' : ''}`}
+            />
             <div className={classes.educationBlock}>
               <EducationExperienceCard
                 title="International Tech School Tel-Ran"
@@ -28,7 +38,11 @@ const EducationExpirience = () => {
             </div>
           </div>
           <div className={classes.experience}>
-            <TitleH2 text="Work Experience" />
+            <TitleH2
+              text="Work Experience"
+              text="Technical Skills"
+              color={`${theme === 'dark' ? 'color' : ''}`}
+            />
             <div className={classes.expirienceBlock}>
               <EducationExperienceCard
                 title="Moved to Germany orientation phase and diverse

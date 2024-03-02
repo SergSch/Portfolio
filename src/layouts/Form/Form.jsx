@@ -1,7 +1,9 @@
 import { useForm } from 'react-hook-form';
 import classes from '../../styles/Form.module.css';
+import { useSelector } from 'react-redux';
 
 const Form = () => {
+  const { theme } = useSelector((state) => state.theme);
   const {
     register,
     handleSubmit,
@@ -17,6 +19,9 @@ const Form = () => {
   return (
     <form className={classes.form} onSubmit={handleSubmit(handleForm)}>
       <input
+        className={`${classes.input} ${
+          theme === 'dark' ? classes.inputDark : ''
+        }`}
         type="text"
         placeholder="First Name"
         {...register('firstname', {
@@ -37,6 +42,9 @@ const Form = () => {
       />
       <p style={{ color: 'red' }}>{errors.firstname?.message}</p>
       <input
+        className={`${classes.input} ${
+          theme === 'dark' ? classes.inputDark : ''
+        }`}
         type="text"
         name=""
         placeholder="Last Name"
@@ -59,6 +67,9 @@ const Form = () => {
       <p style={{ color: 'red' }}>{errors.lastname?.message}</p>
 
       <input
+        className={`${classes.input} ${
+          theme === 'dark' ? classes.inputDark : ''
+        }`}
         type="text"
         name=""
         placeholder="Your Email"
@@ -72,7 +83,15 @@ const Form = () => {
       />
       <p style={{ color: 'red' }}>{errors.email?.message}</p>
 
-      <textarea name="" id="" cols="30" rows="7"></textarea>
+      <textarea
+        className={`${classes.textarea} ${
+          theme === 'dark' ? classes.textareaDark : ''
+        }`}
+        name=""
+        id=""
+        cols="30"
+        rows="7"
+      ></textarea>
       <button className={classes.btn}>Send Message</button>
     </form>
   );

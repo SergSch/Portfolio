@@ -21,3 +21,13 @@ p {
   line-height: 171%;
   color: var(--black);
 }
+
+/* Dark mode */
+
+.wrapperDark {
+  background-color: var(--moreDark);
+  color: var(--lightDark);
+}
+.dark {
+  color: var(--lightDark);
+}

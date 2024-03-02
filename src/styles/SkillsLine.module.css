@@ -12,3 +12,10 @@
   background: var(--black);
   border-radius: 10px;
 }
+/* Dark mode */
+.dark {
+  color: var(--lightDark);
+}
+.darkLine {
+  background-color: var(--light);
+}

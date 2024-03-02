@@ -30,3 +30,10 @@
   flex-direction: column;
   gap: 20px;
 }
+
+/* Dark mode */
+.wrapperDark {
+  background-color: var(--black);
+  opacity: 0.99999;
+  color: var(--lightDark);
+}

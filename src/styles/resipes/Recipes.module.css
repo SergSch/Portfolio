@@ -6,3 +6,9 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Dark mode */
+
+.wrapperDark {
+  background-color: var(--dark);
+}

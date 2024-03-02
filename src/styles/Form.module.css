@@ -3,8 +3,8 @@
   flex-direction: column;
   gap: 20px;
 }
-input,
-textarea {
+.input,
+.textarea {
   border: 1px solid var(--black);
   border-radius: 4px;
   padding: 15px 20px;
@@ -19,4 +19,16 @@ textarea {
   text-align: center;
   color: var(--white);
   padding: 9px 0;
+}
+
+/* Dark mode */
+
+.inputDark,
+.textareaDark {
+  border: 1px solid var(--white);
+  color: var(--lightDark);
+}
+
+.dark {
+  color: var(--lightDark);
 }

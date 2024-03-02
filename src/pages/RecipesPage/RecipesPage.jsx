@@ -1,13 +1,17 @@
+import { useSelector } from 'react-redux';
 import RecipeBlock from '../../layouts/RecipeBlock/RecipeBlock';
-import { useGetAllRecipesQuery } from '../../store/apiSlice';
 import classes from './../../styles/resipes/Recipes.module.css';
 
 const RecipesPage = () => {
-  const { data } = useGetAllRecipesQuery();
-  // console.log(data);
+  const { theme } = useSelector((state) => state.theme);
+  
 
   return (
-    <div className={classes.wrapper}>
+    <div
+      className={`${classes.wrapper} ${
+        theme === 'dark' ? classes.wrapperDark : ''
+      }`}
+    >
       <RecipeBlock />
     </div>
   );

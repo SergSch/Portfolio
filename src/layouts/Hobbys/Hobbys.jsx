@@ -10,6 +10,7 @@ import volley from '../../assets/images/hobbys/volley.jpg';
 import ski from '../../assets/images/hobbys/ski.jpg';
 import football from '../../assets/images/hobbys/football.jpg';
 import chess from '../../assets/images/chess.webp';
+import { useSelector } from 'react-redux';
 
 const Hobbys = () => {
   const hobbys = [
@@ -48,7 +49,7 @@ const Hobbys = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
-    arrows: false,
+    arrows: true,
     responsive: [
       {
         breakpoint: 1023,
@@ -77,17 +78,23 @@ const Hobbys = () => {
       },
     ],
   };
+  const { theme } = useSelector((state) => state.theme);
 
   return (
-    <div className="container">
-      <div className={classes.wrapper}>
-        <TitleH2 text="My Hobbys" />
-        <div>
-          <Slider {...settings}>
-            {hobbys.map((elem) => (
-              <HobbysCard key={elem.id} img={elem.img} title={elem.title} />
-            ))}
-          </Slider>
+    <div className={`${theme === 'dark' ? 'dark' : ''}`}>
+      <div className="container">
+        <div className={classes.wrapper}>
+          <TitleH2
+            text="My Hobbys"
+            color={`${theme === 'dark' ? 'color' : ''}`}
+          />
+          <div>
+            <Slider {...settings}>
+              {hobbys.map((elem) => (
+                <HobbysCard key={elem.id} img={elem.img} title={elem.title} />
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </div>

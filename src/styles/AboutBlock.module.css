@@ -25,3 +25,13 @@
   border-radius: 3px;
   padding: 5px 12px;
 }
+/* Dark mode */
+
+.wrapperDark {
+  background-color: var(--dark);
+  color: var(--lightDark);
+}
+
+.dark {
+  color: var(--lightDark);
+}

@@ -16,6 +16,7 @@
   opacity: 0.1;
   z-index: -1;
 }
+
 .wrap {
   display: flex;
   flex-wrap: wrap;
@@ -75,4 +76,20 @@ a {
   display: flex;
   align-items: center;
   gap: 25px;
+}
+/* DarkMode */
+
+.wrapperDark {
+  background-color: var(--black);
+  opacity: 0.99999;
+  color: var(--lightDark);
+}
+.dark {
+  color: var(--lightDark);
+}
+.darkSvg {
+  filter: invert(1);
+}
+.photoDark {
+  border: 20px solid var(--dark);
 }

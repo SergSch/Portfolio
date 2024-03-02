@@ -62,3 +62,19 @@
 .btn:hover {
   opacity: 0.8;
 }
+
+/* Dark mode */
+
+.wrapperDark {
+  background-color: var(--dark);
+}
+.quizBlockDark {
+  background-color: var(--moreDark);
+}
+.dark {
+  color: var(--lightDark);
+}
+.btnDark {
+  border: 1px solid var(--lightDark);
+  color: var(--lightDark);
+}

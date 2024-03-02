@@ -4,13 +4,22 @@ import FooterContactBlock from '../FooterContactBlock/FooterContactBlock';
 import arrow from '../../assets/images/footerArrowsvg.svg';
 import email from '../../assets/images/icons/email.svg';
 import Form from '../../layouts/Form/Form';
+import { useSelector } from 'react-redux';
 
 const Footer = () => {
+  const { theme } = useSelector((state) => state.theme);
   return (
-    <div className={classes.wrapper}>
+    <div
+      className={`${classes.wrapper} ${
+        theme === 'dark' ? classes.wrapperDark : ''
+      }`}
+    >
       <div className="container">
         <div className={classes.wrap}>
-          <TitleH2 text="Contact Me" />
+          <TitleH2
+            text="Contact Me"
+            color={`${theme === 'dark' ? 'color' : ''}`}
+          />
           <div className={classes.contacts}>
             <div className={classes.address}>
               <FooterContactBlock

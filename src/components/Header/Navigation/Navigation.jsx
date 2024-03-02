@@ -4,6 +4,7 @@ import { GrClose } from 'react-icons/gr';
 import { useRef, useState } from 'react';
 import { SlMenu } from 'react-icons/sl';
 import { useClickOutside } from '../../../customHooks/useClickOutside';
+import { useSelector } from 'react-redux';
 
 const Navigation = () => {
   const [isShow, setIsShow] = useState(false);
@@ -12,6 +13,9 @@ const Navigation = () => {
   useClickOutside(menuRef, () => {
     setIsShow(false);
   });
+
+  const { theme } = useSelector((state) => state.theme);
+
   return (
     <nav>
       <ul
@@ -25,7 +29,7 @@ const Navigation = () => {
             className={({ isActive, isPending }) =>
               `${isPending ? 'pending ' : ''} ${
                 isActive ? classes.active : ''
-              } ${classes.link}`
+              } ${theme === 'dark' ? classes.dark : classes.link}`
             }
           >
             Home
@@ -37,7 +41,7 @@ const Navigation = () => {
             className={({ isActive, isPending }) =>
               `${isPending ? 'pending ' : ''} ${
                 isActive ? classes.active : ''
-              } ${classes.link}`
+              }  ${theme === 'dark' ? classes.dark : classes.link}`
             }
           >
             Quiz
@@ -49,7 +53,7 @@ const Navigation = () => {
             className={({ isActive, isPending }) =>
               `${isPending ? 'pending ' : ''} ${
                 isActive ? classes.active : ''
-              } ${classes.link}`
+              }  ${theme === 'dark' ? classes.dark : classes.link}`
             }
           >
             Weather
@@ -61,14 +65,19 @@ const Navigation = () => {
             className={({ isActive, isPending }) =>
               `${isPending ? 'pending ' : ''} ${
                 isActive ? classes.active : ''
-              } ${classes.link}`
+              }  ${theme === 'dark' ? classes.dark : classes.link}`
             }
           >
             Recipes
           </NavLink>
         </li>
       </ul>
-      <SlMenu className={classes.menu} onClick={() => setIsShow(!isShow)} />
+      <SlMenu
+        className={`${classes.menu} ${
+          theme === 'dark' ? classes.menuDark : ''
+        }`}
+        onClick={() => setIsShow(!isShow)}
+      />
     </nav>
   );
 };

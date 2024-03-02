@@ -16,3 +16,8 @@ h6 {
   text-align: center;
   color: var(--black);
 }
+
+/* Dark mode */
+.dark {
+  color: var(--lightDark);
+}

@@ -3,7 +3,9 @@
   gap: clamp(1.5rem, 1.11rem + 1.95vw, 2.5rem);
   position: relative;
 }
-
+nav {
+  margin-left: 20px;
+}
 .text {
   font-weight: 700;
   font-size: 18px;
@@ -13,16 +15,23 @@
   color: var(--black);
 }
 
-.active {
-  color: var(--green);
-}
-
 .menu {
   display: none;
 }
 
 .close {
   display: none;
+}
+
+.dark {
+  color: var(--lightDark);
+}
+.active {
+  color: var(--green);
+}
+
+.menuDark {
+  filter: invert(1);
 }
 
 @media (max-width: 576px) {
