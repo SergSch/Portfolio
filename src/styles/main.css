@@ -120,3 +120,36 @@ legend {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.scroll-to-top {
+  position: fixed;
+  opacity: 0.5;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: #a6b3c0;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.scroll-to-top:hover {
+  background-color: #0072e6;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+.d-none {
+  display: none;
+}

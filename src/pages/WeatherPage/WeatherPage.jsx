@@ -3,29 +3,22 @@ import classes from '../../styles/Weather/WeatherPage.module.css';
 import { fetchWeather } from '../../utils/requests';
 import Button from '../../UI/Button/Button';
 // import useDebounce from '../../customHooks/useDebounce';
-// import { useDebounce } from '@uidotdev/usehooks';
 
 const WeatherPage = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [city, setCity] = useState('');
-  // const debouncedSearchTerm = useDebounce(city, 1500);
 
   useEffect(() => {
-    // if (debouncedSearchTerm) {
     fetchWeather(setWeatherData);
-    // }
   }, []);
 
-  console.log(weatherData);
-
   const inputHandler = (e) => {
+    e.preventDefault();
     setCity(e.target.value);
   };
 
   const addCity = async () => {
-    // if (debouncedSearchTerm) {
     await fetchWeather(setWeatherData, city);
-    // }
     setCity('');
   };
 
@@ -56,7 +49,7 @@ const WeatherPage = () => {
     <div className={classes.wrapper}>
       <div className={classes.weatherBlock}>
         <h2>Weather Forecast</h2>
-        <div className={classes.searchBlock}>
+        <form className={classes.searchBlock}>
           <input
             type="text"
             value={city}
@@ -65,7 +58,7 @@ const WeatherPage = () => {
             className={classes.inputSearch}
           />
           <Button text="Search" handleClick={addCity} />
-        </div>
+        </form>
         <h3 className={classes.title}>{weatherData?.city.name}</h3>
         <div className={classes.wrap}>
           {forecast?.map((elem) => (

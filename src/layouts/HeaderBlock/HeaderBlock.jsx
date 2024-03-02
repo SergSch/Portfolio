@@ -38,7 +38,7 @@ const HeaderBlock = () => {
               </div>
             </div>
             <div className={classes.social}>
-              <a href="https://t.me/Serg_17fe" target="_blank">
+              <a href="https://t.me/Serg_17ats" target="_blank">
                 <FaTelegramPlane />
               </a>
               <a
