@@ -159,7 +159,20 @@ legend {
 }
 
 /* HTML: <div class="loader"></div> */
-.loader {
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff80;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+}
+.loading_content {
   width: 120px;
   height: 20px;
   -webkit-mask: linear-gradient(90deg, #000 70%, #0000 0) left/20% 100%;

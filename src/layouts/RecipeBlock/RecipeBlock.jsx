@@ -17,7 +17,11 @@ const RecipeBlock = () => {
 
   return (
     <div className={classes.wrapper}>
-      {isLoading && <div class="loader"></div>}
+      {isLoading && (
+        <div className="loading">
+          <div className="loading_content"></div>
+        </div>
+      )}
       <div
         className={`${classes.titleBlock} ${
           theme === 'dark' ? classes.wrapperDark : ''
