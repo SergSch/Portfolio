@@ -54,7 +54,7 @@ h1 {
   font-size: clamp(2.25rem, 1.665rem + 2.93vw, 3.75rem);
   line-height: 108%;
 }
-h3 {
+.frontend {
   font-weight: 700;
   font-size: 26px;
   line-height: 131%;

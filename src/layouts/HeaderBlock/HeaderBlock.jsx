@@ -22,7 +22,13 @@ const HeaderBlock = () => {
           <div className={classes.about}>
             <div className={classes.hello}>Hello I'm</div>
             <h1>Serg Shyshov</h1>
-            <h3 className={classes.dark}>Frontend Developer</h3>
+            <h3
+              className={`${classes.frontend} ${
+                theme === 'dark' ? classes.dark : ''
+              }`}
+            >
+              Frontend Developer
+            </h3>
             <div
               className={`${classes.contacts} ${
                 theme === 'dark' ? classes.dark : ''
